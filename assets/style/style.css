@@ -20,7 +20,7 @@ body {
 }
 
 header img:hover {
-  box-shadow: 3px 3px 5px black;
+  transform:scale(1.20);
 }
 
 .container {
@@ -81,7 +81,7 @@ header img:hover {
 .sec {
   position: relative;
   background-color: #003329;
-  padding: 100px;
+  padding: 20px 100px;
 }
 
 .sec h2 {
@@ -94,4 +94,59 @@ header img:hover {
   font-size: 1em;
   color: #fff;
   font-weight: 300;
+}
+
+.sobre {
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.sobre-mim {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologias {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+}
+
+.tecnologias img {
+  height: 100px;
+  width: 100px;
+}
+
+.tecnologias img:hover {
+  transform:scale(1.30);
+}
+
+.projetos {
+  height: 100vh;
+  width: 90%;
+  background-color: wheat;
+}
+
+.projetos p {
+  color: black;
+}
+
+footer {
+  padding: 50px;
+  background-color: black;
 }

@@ -8,13 +8,18 @@ window.addEventListener('scroll', () => {
   let value = window.scrollY;
   const number = 10;
 
-  text.style.marginTop = value * 2.5 + 'px';
   leaf.style.top = value * -1.5 + 'px';
   leaf.style.left = value * 1.5 + 'px';
-  hill5.style.left = value * 1.5 + 'px';
-  hill4.style.left = value * -1.5 + 'px';
-
 
   if (value <= 700) hill1.style.top = value * 1 + 'px';
   else hill1.style.top = '0px';
+
+  if (value <= 600) text.style.marginTop = value * 2.5 + 'px';
+  else text.style.marginTop = '0px';
+
+  if (value <= 600) hill5.style.left = value * 1.5 + 'px';
+  else hill5.style.left = '0px';
+
+  if (value <= 600) hill4.style.left = value * -1.5 + 'px';
+  else hill4.style.left = '0px';
 });
