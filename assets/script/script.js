@@ -7,20 +7,10 @@ let hill5 = document.getElementById('hill5');
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
   const number = 10;
-  hill1.style.top = '0px'
 
-  if (hill1.style.top == '0px') {
-    text.style.marginTop = value * 2.5 + 'px';
-    leaf.style.top = value * -1.5 + 'px';
-    leaf.style.left = value * 1.5 + 'px';
-    hill5.style.left = value * 1.5 + 'px';
-    hill4.style.left = value * -1.5 + 'px';
-    hill1.style.top = value * 1 + 'px';
-
-    if (hill1.style.top >= '1000px') {
-      hill1.style.top = '800px';
-    }
-  }
-
-  console.log(hill1.style.top)
+  text.style.marginTop = value * 2.5 + 'px';
+  leaf.style.top = value * -1.5 + 'px';
+  leaf.style.left = value * 1.5 + 'px';
+  hill5.style.left = value * 1.5 + 'px';
+  hill4.style.left = value * -1.5 + 'px';
 });
