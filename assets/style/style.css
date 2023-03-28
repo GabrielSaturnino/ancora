@@ -20,8 +20,7 @@ body {
 }
 
 header img:hover {
-  width: 130px;
-  height: 130px;
+  box-shadow: 3px 3px 5px black;
 }
 
 .container {
@@ -50,6 +49,10 @@ header img:hover {
 .navigation a.active {
   background: #359381;
   color: #fff;
+}
+
+.navigation a.active:hover {
+  background: #133e35;
 }
 
 .parallax {
